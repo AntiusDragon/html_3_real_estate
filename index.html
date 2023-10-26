@@ -14,22 +14,125 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.webp" alt="Logo">
-        <div>
-            <nav>
-                <a href="#">Buy</a>
-                <a href="#">Rent</a>
-                <a href="#">Agent</a>
-                <a href="#">About</a>
+    <header class="main-heder">
+        <img class="logo" src="./img/logo.webp" alt="Logo">
+        <div class="mainn-heder-right-side">
+            <nav class="main-menu">
+                <a class="menu-link" href="#">Buy</a>
+                <a class="menu-link" href="#">Rent</a>
+                <a class="menu-link" href="#">Agent</a>
+                <a class="menu-link" href="#">About</a>
             </nav>
 
-            <img src="./img/user.png" alt="User avatar">
+            <img class="user-avatar" src="./img/user.png" alt="User avatar">
         </div>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="main-title">We help you find your dream home.</h1>
+                <form>
+                    <div>
+                        <button type="button">Buy</button>
+                        <button type="button">Rent</button>
+                    </div>
+                    <div>
+                        <input type="text">
+                            <button type="submit"></button>
+                        </input>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="neighborhood">
+            <div class="section-title">
+                <h2 class="title">Top neighborhood</h2>
+                <p class="description">The surroundings are best for your lifestyle.</p>
+            </div>
+            <div class="neighborhood-listing">
+
+                <div class="listing-item">
+                    <img class="item-image" src="./img/1.png" alt="House">
+                    <div class="item-size">$1862 / Sq. Ft.</div>
+                    <div class="item-details">
+                        <p class="`location">ICON + New York, NY</p>
+                        <p class="name">Carroll Gardens</p>
+                    </div>
+                </div>
+
+                <div class="listing-item">
+                    <img class="item-image" src="./img/2.png" alt="House">
+                    <div class="item-size">$1862 / Sq. Ft.</div>
+                    <div class="item-details">
+                        <p class="`location">ICON + California, Ca</p>
+                        <p class="name">Napa Countyurg</p>
+                    </div>
+                </div>
+
+                <div class="listing-item last-item">
+                    <img class="item-image" src="./img/3.png" alt="House">
+                    <div class="item-size">$862 / Sq. Ft.</div>
+                    <div class="item-details">
+                        <p class="`location">ICON + Chicago,IL</p>
+                        <p class="name">Murray Hill</p>
+                    </div>
+                </div>
+
+                <a class="btn" href="#">See all</a>
+            </div>
+        </section>
+
+        <section class="recommended">
+            <div class="section-title">
+                <h2 class="title">Recommended for you</h2>
+                <p class="name">The surroundings are best for your lifestyle.</p>
+            </div>
+            <div class="recommended-listing">
+                <div class="listing-item">
+                    <img class="item-image" src="./img/1.png" alt="House">
+                    <div class="item-details">
+                        <p class="item-price">$798,500</p>
+                        <p class="location-strret">121 East 38th Street</p>
+                        <p class="location-city">Manhattan, NY 10016</p>
+                        <div class="item-features">
+                            <div class="features"><i class="fa fa-bath" aria-hidden="true"></i> 2 Baths</div>
+                            <div class="features"><i class="fa fa-bed" aria-hidden="true"></i> 3 Beds</div>
+                            <div class="features"><i class="fa fa-object-group" aria-hidden="true"></i> 1,500sqft</div>
+                        </div>
+                    </div>
+                    <div class="bookmark active">
+                        <div class="fa fa-bookmark-o"></div>
+                        <div class="fa fa-bookmark"></div>
+                    </div>
+                </div>
+
+                <div class="listing-item">
+                    <img class="item-image" src="./img/1.png" alt="House">
+                    <div class="item-details">
+                        <p class="item-price">$798,500</p>
+                        <p class="location-strret">121 East 38th Street</p>
+                        <p class="location-city">Manhattan, NY 10016</p>
+                        <div class="item-features">
+                            <div class="features"><i class="fa fa-bath" aria-hidden="true"></i> 1 Baths</div>
+                            <div class="features"><i class="fa fa-bed" aria-hidden="true"></i> 2 Beds</div>
+                            <div class="features"><i class="fa fa-object-group" aria-hidden="true"></i> 900 sqft</div>
+                        </div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="fa fa-bookmark-o"></div>
+                        <div class="fa fa-bookmark"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
