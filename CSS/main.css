@@ -112,22 +112,26 @@ body * {
   width: 100%;
  }
  .neighborhood-listing > .listing-item {
-  width: 30%;
-  margin-right: 5%;
+  width: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
   float: left;
-  /* background-color: yellow; */
   position: relative;
   border-radius: 30px;
   overflow: hidden; /*padaro visus su radiusais*/
+  background-color: red;
  }
  .neighborhood-listing > .listing-item.last-item {
   margin-right: 0;
+  margin-bottom: 17px;
  }
  .neighborhood-listing .item-image {
   width: 100%;
   height: 250px;
   object-position: center;
   object-fit: cover;
+ }
+ .neighborhood-listing > .listing-item.last-item .item-image {
+  height: 190px; 
  }
  .neighborhood-listing .item-size {
   background-color: #869ef9;
@@ -152,7 +156,23 @@ body * {
  }
  .neighborhood-listing .name {
  }
-
+ .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #ff9376;
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid #ff9376;
+  box-shadow: 0 4px 8px rgba(255, 147, 118, 0.5);
+ }
+ .btn:hover {
+  background-color: #fff;
+  color: #ff9376;
+ }
  .recommended-listing {
   width: 100%;
  }
