@@ -140,9 +140,10 @@ body * {
  }
  .neighborhood-listing .item-details {
   position: absolute;
-   bottom: 15px;
-   left: 15px;
-   right: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -199,15 +200,30 @@ body * {
   font-size: 14px;
  }
  .recommended-listing .features {
-  margin-right: 15px;
+ }
+ .recommended-listing .features >.fa {
+  margin-right: 5px;
  }
  .recommended-listing .bookmark {
-  background-color: red;
   width: 20px;
   height: 30px;
   position: absolute;
-  top: 0;
+  top: -5px;
   right: 30px;
   font-size: 30px;
   color: #8b8bff;
+  cursor: pointer;
+ }
+ .recommended-listing .bookmark > .fa-bookmark,
+ .recommended-listing .bookmark:hover > .fa-bookmark-o,
+ .recommended-listing .bookmark.active > .fa-bookmark-o,
+ .recommended-listing .bookmark.active:hover > .fa-bookmark {
+  display: none;
+ }
+ .recommended-listing .bookmark:hover > .fa-bookmark,
+ .recommended-listing .bookmark.active > .fa-bookmark,
+ .recommended-listing .bookmark.active:hover > .fa-bookmark-o {
+  position: absolute;
+  top: 2.5px;
+  display: block;
  }
