@@ -78,11 +78,75 @@ body * {
 
  .hero-content {
    width: 30%;
-   margin-top: 150px;
  }
 
  .main-title {
    margin-bottom: 30px;
+ }
+ .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+ }
+ .form > .filter {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #fff;
+ }
+ .form .filter-btn {
+  padding: 8px 35px;
+  background-color: #fff;
+  color: #8080ff;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+ }
+ .form .filter-btn:hover {
+  box-shadow: 0 2px 8px #8080ff80;
+ }
+ .form .filter-btn.active {
+  background-color: #8080ff;
+  color: #fff;
+ }
+ .form .label-city {
+  display: none;
+ }
+ .form > .search {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+ }
+ .form .input {
+  width: 50%;
+  padding: 5px 0;
+  font-size: 15px;
+  flex-grow: 1;
+  border: none;
+ }
+ ::placeholder {
+  color: red;
+  font-size: 15px;
+  font-style: italic;
+ }
+ .form .search-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #ff9376;
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid #ff9376;
+  box-shadow: 0 4px 8px rgba(255, 147, 118, 0.5);
  }
 
  .neighborhood {
@@ -90,21 +154,17 @@ body * {
    float: left;
    margin-right: 30px;
  }
-
  .neighborhood > section > div > p {
 
  }
-
  .recommended {
    width: calc(40% - 30px);
    float: right;
  }
-
  .section-title {
   width: 100%s;
   margin-bottom: 20px;
  }
-
  .section-title > .description {
  }
 
